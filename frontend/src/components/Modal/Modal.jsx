@@ -1,4 +1,4 @@
-import React, { useRef, children, useEffect } from "react";
+import React, { useRef, useEffect } from "react";
 import ReactDOM from "react-dom";
 
 import "./styles.scss";
