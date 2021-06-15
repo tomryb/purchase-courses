@@ -6,7 +6,7 @@ const coursesRoutes = require("./routes/courses");
 const usersRoutes = require("./routes/users");
 
 const server = express();
-const PORT = process.env.PORT || 5000;
+const PORT = "https://tr-react-project.herokuapp.com/"
 
 server.use(bodyParser.json());
 server.use(cors());
@@ -22,7 +22,7 @@ if (process.env.NODE_ENV === "production") {
       res.sendFile(path.join(__dirname, "frontend/build", "index.html"));
     });
   }
-  const whitelist = ["http://localhost:3000", "http://localhost:5000"];
+  const whitelist = ["http://localhost:3000", "https://tr-react-project.herokuapp.com/"];
   const corsOptions = {
     origin: function (origin, callback) {
       console.log("** Origin of request " + origin);
