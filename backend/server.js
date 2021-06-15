@@ -13,8 +13,7 @@ server.use(cors());
 server.use('/courses', coursesRoutes);
 server.use('/users', usersRoutes);
 
-const API = "748f33b9-dc7a-4b5e-bdce-5d6fc4c18993"
 
 // server.listen(8000, () => console.log('Server for course is started...'));
-server.listen(API, () => console.log('Server for course is started...'));
+server.listen(80, () => console.log('Server for course is started...'));
 
