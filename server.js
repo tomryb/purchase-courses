@@ -6,6 +6,7 @@ const coursesRoutes = require("./routes/courses");
 const usersRoutes = require("./routes/users");
 
 const server = express();
+const PORT = process.env.PORT || 5000;
 
 server.use(bodyParser.json());
 server.use(cors());
@@ -36,6 +37,6 @@ if (process.env.NODE_ENV === "production") {
   };
 
 // server.listen(8000, () => console.log('Server for course is started...'));
-server.listen(5000, () => console.log("Server for course is started..."));
+server.listen(PORT, () => console.log("Server for course is started..."));
 
 
