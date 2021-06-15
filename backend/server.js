@@ -13,4 +13,8 @@ server.use(cors());
 server.use('/courses', coursesRoutes);
 server.use('/users', usersRoutes);
 
-server.listen(8000, () => console.log('Server for course is started...'));
+const URL = "https://awesome-turing-7e67d2.netlify.app/"
+
+// server.listen(8000, () => console.log('Server for course is started...'));
+server.listen(URL, () => console.log('Server for course is started...'));
+

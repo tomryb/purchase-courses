@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const request = axios.create({
-  baseURL: "http://localhost:8000",
+  baseURL: "https://awesome-turing-7e67d2.netlify.app/",
   validateStatus: false
 });
 
