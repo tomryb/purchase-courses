@@ -1,5 +1,3 @@
-Base url: https://app.netlify.com/sites/awesome-turing-7e67d2
-
 Endpoint: '/users'
 
 1. Metoda POST (logowanie u�ytkownika):

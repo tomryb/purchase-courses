@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const request = axios.create({
-  baseURL: "https://awesome-turing-7e67d2.netlify.app/",
+  baseURL: "748f33b9-dc7a-4b5e-bdce-5d6fc4c18993",
   validateStatus: false
 });
 
