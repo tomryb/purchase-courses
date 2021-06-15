@@ -14,6 +14,6 @@ server.use('/courses', coursesRoutes);
 server.use('/users', usersRoutes);
 
 
-// server.listen(8000, () => console.log('Server for course is started...'));
-server.listen(80, () => console.log('Server for course is started...'));
+server.listen(8000, () => console.log('Server for course is started...'));
+// server.listen(80, () => console.log('Server for course is started...'));
 
