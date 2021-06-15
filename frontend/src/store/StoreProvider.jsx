@@ -1,6 +1,7 @@
 import React, { createContext, useEffect, useState } from "react";
+import axios from 'axios';
 
-import request from "../helpers/request";
+// import request from "../helpers/request";
 
 export const StoreContext = createContext(null);
 
@@ -9,7 +10,7 @@ const StoreProvider = ({ children }) => {
   const [user, setUser] = useState(null);
 
   const fetchData = async () => {
-    const { data } = await request.get("/courses");
+    const { data } = await axios.get("/courses");
 
     setCourses(data.courses);
   };
