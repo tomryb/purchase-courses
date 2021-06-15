@@ -1,8 +1,9 @@
 import React, { useContext, useState, useEffect } from "react";
 import { StoreContext } from "../../store/StoreProvider";
 import Modal from "../Modal/Modal";
+import axios from 'axios';
 
-import request from "../../helpers/request";
+// import request from "../../helpers/request";
 
 import "./styles.scss";
 
@@ -28,7 +29,7 @@ const LoginForm = ({ handleOnClose, isModalOpen }) => {
 
   const handleOnSubmit = async (event) => {
     event.preventDefault();
-    const { data, status } = await request.post("/users", { login, password });
+    const { data, status } = await axios.post("/users", { login, password });
 
     if (status === 200) {
       setUser(data.user);
