@@ -1,7 +1,9 @@
 import axios from "axios";
 
+const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:5000';
+
 const request = axios.create({
-  baseURL: "https://awesome-turing-7e67d2.netlify.app:8000",
+  baseURL: API_URL,
   validateStatus: false
 });
 
