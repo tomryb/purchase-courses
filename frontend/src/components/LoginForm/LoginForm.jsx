@@ -59,7 +59,7 @@ const LoginForm = ({ handleOnClose, isModalOpen }) => {
       <form className="form" method="post" onSubmit={handleOnSubmit}>
         <div className="row">
           <label>
-            Login
+            Loginasd
             <input onChange={handleOnChangeLogin} type="text" value={login} />
           </label>
         </div>
