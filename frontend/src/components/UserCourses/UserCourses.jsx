@@ -9,7 +9,7 @@ const UserCourses = () => {
 
   const boughtCourses = courses
     .filter((course) => user.courses.includes(course.id))
-    .map((course) => <Course key={course.id} {...course}></Course>);
+    .map((course) => <Course isUserContext={true} key={course.id} {...course}></Course>);
 
   return (
     <section className="user-courses">
