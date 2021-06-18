@@ -4,6 +4,10 @@
   padding: 0;
 }
 
+li {
+  list-style-type: none;
+}
+
 .content-wrapper {
   margin-top: 60px;
   height: calc(100vh-60px);
