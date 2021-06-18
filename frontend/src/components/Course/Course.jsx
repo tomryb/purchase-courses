@@ -8,7 +8,7 @@ const Course = ({ authors, img, price, title }) => {
   return (
     <li>
       <article className="course-card">
-        <h3 className="title"></h3>
+        <h3 className="title">{title}</h3>
         <img className="img" src={img} alt={title} />
         <p className="price">{`Koszt kursu ${price}zł`}</p>
         <p className="authors">{`Autorzy kursu ${allAuthors}`}</p>

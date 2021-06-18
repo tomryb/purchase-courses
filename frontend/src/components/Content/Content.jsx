@@ -2,6 +2,8 @@ import React, { useContext } from "react";
 import { Switch, Route, Redirect } from "react-router";
 import { StoreContext } from "../../store/StoreProvider";
 import Courses from "../Courses/Courses";
+import UserCourses from "../UserCourses/UserCourses";
+
 import "./styles.scss";
 
 const ADMIN_TYPE = 1;
@@ -18,7 +20,7 @@ const Content = () => {
           <Route
             exact
             path="/my-courses"
-            render={() => <p>Moje kursy</p>}
+            render={() => <UserCourses></UserCourses>}
           ></Route>
         )}
         {isAdmin && (

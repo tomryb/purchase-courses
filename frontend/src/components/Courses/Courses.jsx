@@ -1,9 +1,8 @@
 import React, { useContext } from "react";
 import { StoreContext } from "../../store/StoreProvider";
-import Course from "./subcomponents/Course";
+import Course from "../Course/Course";
 
 import "./styles.scss";
-
 
 const Courses = () => {
   const { courses } = useContext(StoreContext);
@@ -14,7 +13,6 @@ const Courses = () => {
 
   return (
     <section className="courses">
-      <h2 className="title"></h2>
       <ul className="list">{coursesElements}</ul>
     </section>
   );
