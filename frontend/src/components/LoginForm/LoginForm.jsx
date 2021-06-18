@@ -3,8 +3,6 @@ import { StoreContext } from "../../store/StoreProvider";
 import Modal from "../Modal/Modal";
 import axios from 'axios';
 
-// import request from "../../helpers/request";
-
 import "./styles.scss";
 
 const LoginForm = ({ handleOnClose, isModalOpen }) => {

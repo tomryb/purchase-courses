@@ -1,8 +1,6 @@
 import React, { createContext, useEffect, useState } from "react";
 import axios from 'axios';
 
-// import request from "../helpers/request";
-
 export const StoreContext = createContext(null);
 
 const StoreProvider = ({ children }) => {
